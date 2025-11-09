@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanjana Rahman • Portfolio</title>
+  <meta name="description" content="Portfolio of Sanjana Rahman. Computational science, machine learning, statistics, and data visualization." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0b1320; --muted:#465066; --accent:#0b57d0; --card:#f7f9fc; --border:#e4e7ee; --chip:#eef3ff
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:var(--bg); color:var(--text); line-height:1.6}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1060px; margin:0 auto; padding:24px}
+    header{display:flex; gap:20px; align-items:center; padding:8px 0 16px 0}
+    header img{width:96px; height:96px; border-radius:50%; object-fit:cover; border:2px solid var(--border)}
+    .id{flex:1}
+    h1{margin:0 0 6px 0; font-size:30px}
+    .tag{color:var(--muted)}
+    nav{display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 22px 0}
+    nav a{padding:8px 12px; background:var(--chip); border:1px solid var(--border); border-radius:999px; font-size:14px}
+    .grid{display:grid; gap:16px}
+    @media (min-width: 900px){ .grid{ grid-template-columns:2fr 1fr } }
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px}
+    .card h2{margin:0 0 10px 0; font-size:20px}
+    .list{list-style:none; margin:0; padding:0; display:grid; gap:14px}
+    .item h3{margin:0 0 6px 0; font-size:16px}
+    .item p{margin:4px 0; color:var(--muted)}
+    .meta{color:var(--muted); font-size:13px}
+    .skills{display:flex; flex-wrap:wrap; gap:8px}
+    .skills span{padding:6px 10px; background:#fff; border:1px solid var(--border); border-radius:999px; font-size:13px}
+    .two-col{display:grid; gap:16px}
+    @media (min-width:700px){ .two-col{grid-template-columns:1fr 1fr} }
+    .row{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+    .button{display:inline-block; padding:10px 14px; background:var(--accent); color:#fff; border-radius:10px; border:0}
+    footer{margin:28px 0; color:var(--muted); font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="SANJANA_Photo.jpg" alt="Portrait of Sanjana Rahman">
+      <div class="id">
+        <h1>Sanjana Rahman</h1>
+        <div class="tag">Computational scientist. Machine learning, statistics, and visual analytics. Python and R on HPC.</div>
+        <div class="row" style="margin-top:10px">
+          <a class="button" href="#projects">View projects</a>
+          <a href="CV_of_Sanjana_Rahman.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="grid">
+      <main class="col">
+        <section id="about" class="card">
+          <h2>About</h2>
+          <p>I analyze geophysical and environmental datasets and build predictive models. I design reproducible pipelines in Python and R and run them on high performance computing systems.</p>
+        </section>
+
+        <section id="projects" class="card">
+          <h2>Projects</h2>
+          <ul class="list">
+            <li class="item">
+              <h3>Aerosol mass spectrometry analysis</h3>
+              <p>Processed NOAA datasets with miniSPLAT and ClusterSculptor. Used PCA and clustering to classify particles including black carbon.</p>
+              <div class="meta">2023 • Atmospheric Aerosol Research Group, PNNL</div>
+              <p><a href="https://github.com/sanjanarahmanjoyeeta" target="_blank" rel="noopener">GitHub profile</a></p>
+            </li>
+            <li class="item">
+              <h3>fMRI deep learning pipeline</h3>
+              <p>Built PyTorch and TensorFlow models with numerical optimization for cognitive neuroscience. Deployed on HPC for large scale training.</p>
+              <div class="meta">2024–2025 • UTEP</div>
+            </li>
+            <li class="item">
+              <h3>Cryptography algorithms study</h3>
+              <p>Compared symmetric and asymmetric encryption algorithms. Benchmarked efficiency and security properties.</p>
+              <div class="meta">2019–2020 • Southeast University</div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="experience" class="card">
+          <h2>Experience</h2>
+          <ul class="list">
+            <li class="item">
+              <h3>Graduate Research and Teaching Assistant, UTEP</h3>
+              <div class="meta">Aug 2022 – Aug 2025 • El Paso, Texas</div>
+              <p>Developed deep learning models for fMRI. Taught and tutored math courses at MARCS.</p>
+            </li>
+            <li class="item">
+              <h3>Summer Intern, PNNL</h3>
+              <div class="meta">Jul 2023 – Sep 2023 • Richland, Washington</div>
+              <p>Python based analysis of aerosol mass spectrometry datasets. PCA and clustering for particle classification.</p>
+            </li>
+            <li class="item">
+              <h3>Faculty, Scholastica</h3>
+              <div class="meta">Jan 2021 – Dec 2021 • Dhaka, Bangladesh</div>
+              <p>Taught programming, robotics, science, and math. Designed hands on projects.</p>
+            </li>
+            <li class="item">
+              <h3>Undergraduate Teaching Assistant, Southeast University</h3>
+              <div class="meta">Mar 2021 – Oct 2021 • Dhaka, Bangladesh</div>
+              <p>Assisted courses in C programming, computing concepts, and data structures.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="education" class="card">
+          <h2>Education</h2>
+          <div class="two-col">
+            <div>
+              <h3>M.S., Computational Science</h3>
+              <p class="meta">University of Texas at El Paso, 2025, CGPA 3.85</p>
+            </div>
+            <div>
+              <h3>B.S., Computer Science and Engineering</h3>
+              <p class="meta">Southeast University, 2020, CGPA 3.81</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="col">
+        <section id="skills" class="card">
+          <h2>Skills</h2>
+          <div class="skills">
+            <span>Python</span><span>R</span><span>Matlab</span><span>Bash</span><span>C</span><span>C++</span><span>Java</span><span>JavaScript</span><span>HTML</span><span>PHP</span><span>CSS</span>
+            <span>Pandas</span><span>NumPy</span><span>SciPy</span><span>Matplotlib</span><span>ggplot2</span><span>tidyverse</span><span>Scikit Learn</span><span>PyTorch</span><span>TensorFlow</span><span>Shiny</span><span>Dash</span>
+            <span>survey</span><span>srvyr</span><span>LaTeX</span><span>Git</span><span>Jupyter</span><span>RStudio</span><span>Quarto</span><span>Overleaf</span><span>SPSS</span>
+            <span>Excel</span><span>PowerPoint</span><span>Word</span><span>Linux</span><span>Unix</span><span>Windows</span><span>Mac OS</span><span>WSL</span>
+            <span>Shell scripting</span><span>HPC</span>
+          </div>
+        </section>
+
+        <section id="contact" class="card">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:rahmansan9@gmail.com">rahmansan9@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/rahmansanjana" target="_blank" rel="noopener">linkedin.com/in/rahmansanjana</a></p>
+          <p>Website: <a href="https://sanjanarahmanjoyeeta.github.io" target="_blank" rel="noopener">sanjanarahmanjoyeeta.github.io</a></p>
+          <p>GitHub: <a href="https://github.com/sanjanarahmanjoyeeta" target="_blank" rel="noopener">github.com/sanjanarahmanjoyeeta</a></p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Sanjana Rahman
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
